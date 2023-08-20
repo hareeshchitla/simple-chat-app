@@ -54,7 +54,7 @@ function getUsersInRoom(room) {
   return Object.values(users).filter((user) => user.room === room).map((user) => user.username);
 }
 
-const PORT = 7004;
+const PORT = 7005;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
